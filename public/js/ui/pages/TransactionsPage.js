@@ -40,7 +40,7 @@ class TransactionsPage {
     deleteBtns.addEventListener('click', (ev) => {
       ev.preventDefault()
       if (ev.target.classList.contains('remove-account')) {
-        this.removeAccount()
+        this.removeAccount(ev)
       } else if (ev.target.classList.contains('btn-danger')) {
         this.removeTransaction(ev.target.dataset.id)
       }
